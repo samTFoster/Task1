@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Geonames</title>
+    <meta name="author" content="Sam Foster" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="libs/style.css" />
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th>API Name</th>
+        <th>API Description</th>
+        <th></th>
+      </tr>
+      <tr>
+        <td>Find Nearby Weather!</td>
+        <td>
+          <p>
+            This API will return the temperature, cloud status, humidity and
+            wind speed.
+          </p>
+          <p>
+            Please Select Latitude
+            <select id="lat">
+              <option value="42">42.00838</option>
+            </select>
+          </p>
+          <p>
+            Please Select Longitude
+            <select id="lng">
+              <option value="-2">-1.62303</option>
+            </select>
+          </p>
+        </td>
+        <td><button id="btnRun">Run</button></td>
+      </tr>
+      <tr>
+        <td>Find Closest Ocean</td>
+        <td>
+          <p>
+            This API will find the Closest Ocean to you by entering you latitude
+            and Longitude
+          </p>
+          <p>
+            Please Select Latitude
+            <select id="lat2">
+              <option value="-8.783195">-8.783195</option>
+            </select>
+          </p>
+          <p>
+            Please Select Longitude
+            <select id="lng2">
+              <option value="-124.50852299999997">-124.50852299999997</option>
+            </select>
+          </p>
+        </td>
+        <td><button id="btnRun2">Run</button></td>
+      </tr>
+      <tr>
+        <td>Summary of any city</td>
+        <td>
+          <p>Please type in a city</p>
+          <input id="city" type="text" value="" />
+        </td>
+        <td><button id="btnRun3">Submit</button></td>
+      </tr>
+    </table>
+    <div id="divResults">
+      <table>
+        <tr>
+          <td colspan="3">
+            Results
+            <p id="resultTemp"></p>
+            <p id="resultClouds"></p>
+            <p id="resultHum"></p>
+            <p id="resultWndSpd"></p>
+            <p id="resultOcean"></p>
+            <p id="resultCity"></p>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+
+  <script
+    type="application/javascript"
+    src="libs/js/jquery-2.2.3.min.js"
+  ></script>
+  <script type="application/javascript" src="libs/js/script.js"></script>
+</html>
