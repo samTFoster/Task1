@@ -13,7 +13,7 @@ $('#btnRun').click(function() {
             console.log(JSON.stringify(result));
 // Look Through JSON and convert data
             if (result.status.name == "ok") {
-
+                $('#divResults').remove();
                 $('#resultTemp').html("The temperature is: " + result['data']['temperature']);
                 $('#resultClouds').html("The cloud coverage is: " + result['data']['clouds']);
                 $('#resultHum').html("The humidity level is: " + result['data']['humidity']);
