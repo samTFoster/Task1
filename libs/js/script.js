@@ -4,8 +4,8 @@ $('#btnRun').click(function() {
         type: 'POST',
         dataType: 'json',
         data: {
-            lng: $('#lng').val(),
-            lat: $('#lat').val()
+            lng: $('input').$attr('id=lng').val(),
+            lat: $('input').$attr('id=lat').val()
         },
         success: function(result) {
 
