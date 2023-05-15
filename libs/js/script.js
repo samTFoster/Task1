@@ -21,10 +21,14 @@ $('#btnRun').click(function() {
 
             
             }
+            else {
+                $('#resultTemp').html("Incorrect coordinates please try again.")
+            }
         },
         error: function(jqXHR, textStatus, errorThrown) {
             // your error code
             console.log(textStatus + errorThrown);
+            
         }
     }); 
 })
@@ -44,7 +48,10 @@ $('#btnRun2').click(function() {
 
                 $('#resultOcean').html("The closest ocean to you is: " + result['data']['name'])
 
+            } else {
+                $('#resultOcean').html("Incorrect coordinates please try again.")
             }
+            
         },
         error: function(jqXHR, testStatus, errorThrown){
             console.log(testStatus + errorThrown);
@@ -67,6 +74,8 @@ $('#btnRun2').click(function() {
 
                 $('#resultCity').html("Summary: " + result['data'][0]['summary'])
 
+            }  else {
+                $('#resultCity').html("City not found please try again")
             }
         },
         error: function(jqXHR, testStatus, errorThrown){
