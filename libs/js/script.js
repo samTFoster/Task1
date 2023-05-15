@@ -34,8 +34,8 @@ $('#btnRun2').click(function() {
         type: 'POST',
         dataType: 'json',
         data: {
-            lng: $('#lng2').val(),
-            lat: $('#lat2').val()
+            lng: $('input').$attr('id=lng2').val(),
+            lat: $('input').$attr('id=lat2').val()
         },
         success: function(result){
             console.log(JSON.stringify(result))
@@ -58,7 +58,7 @@ $('#btnRun2').click(function() {
         type: 'POST',
         dataType: 'json',
         data: {
-            city: $('input').val()
+            city: $('input').$attr('id=city').val()
         },
         success: function(result){
             console.log(JSON.stringify(result))
