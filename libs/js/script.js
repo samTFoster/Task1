@@ -65,7 +65,7 @@ $('#btnRun2').click(function() {
         type: 'POST',
         dataType: 'json',
         data: {
-            city: $('input').$attr('id=city').val()
+            city: $('input').val()
         },
         success: function(result){
             console.log(JSON.stringify(result))
